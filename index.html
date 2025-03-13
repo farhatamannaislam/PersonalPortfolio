@@ -7,13 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio - Farha Tamanna Islam</title>
     <link rel="stylesheet" href="style.css">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/dc1461ab12.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div id="header">
         <div class="container">
             <nav>
-                <img src="images/logo.png" alt ="logo image" class="logo">
+                <img src="images/logo.png" alt="logo image" class="logo">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
@@ -105,46 +107,56 @@
         </div>
     </div>
 
-<!---services-->
-<div id="services">
-    <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-            <div>
-                <h2>Web Development</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Praesent venenatis odio ut neque feugiat, in consequat nisi cursus.
-                    Vestibulum aliquam odio nec velit tincidunt, at convallis augue interdum. Donec nec justo purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                 </p>
-                 <a href="'#">learn more</a>
-            </div>
-            <div>
-                <h2>Frontend and Backend Development</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Praesent venenatis odio ut neque feugiat, in consequat nisi cursus.
-                    Vestibulum aliquam odio nec velit tincidunt, at convallis augue interdum. Donec nec justo purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                 </p>
-                 <a href="'#">learn more</a>
-            </div>
-            <div>
-                <h2>UX/UI Design</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Praesent venenatis odio ut neque feugiat, in consequat nisi cursus.
-                    Vestibulum aliquam odio nec velit tincidunt, at convallis augue interdum. Donec nec justo purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                 </p>
-                 <a href="'#">learn more</a>
+    <!---services-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>Web Development</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Praesent venenatis odio
+                        ut neque feugiat, in consequat nisi cursus.
+                        Vestibulum aliquam odio nec velit tincidunt, at convallis augue interdum. Donec nec justo purus.
+                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                    </p>
+                    <a href="'#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Frontend and Backend Development</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Praesent venenatis odio
+                        ut neque feugiat, in consequat nisi cursus.
+                        Vestibulum aliquam odio nec velit tincidunt, at convallis augue interdum. Donec nec justo purus.
+                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                    </p>
+                    <a href="'#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-object-group"></i>
+                    <h2>UX/UI Design</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Praesent venenatis odio
+                        ut neque feugiat, in consequat nisi cursus.
+                        Vestibulum aliquam odio nec velit tincidunt, at convallis augue interdum. Donec nec justo purus.
+                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                    </p>
+                    <a href="'#">Learn more</a>
+                </div>
             </div>
         </div>
     </div>
-</div>
+    <!---Portfolio-->
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
-        function opentab(tabname){
-            for(tablink of tablinks){
+        function opentab(tabname) {
+            for (tablink of tablinks) {
                 tablink.classList.remove("active-link");
             }
-            for(tabcontent of tabcontents){
+            for (tabcontent of tabcontents) {
                 tabcontent.classList.remove("active-tab");
             }
             event.currentTarget.classList.add("active-link");
