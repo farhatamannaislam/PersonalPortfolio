@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,21 +8,149 @@
     <title>Personal Portfolio - Farha Tamanna Islam</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<div id="header">
-    <div class="container">
-        <nav>
-            <img src="images/logo.png" class="logo">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt ="logo image" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack SW Developer</p>
+                <h1>Hi, I am <span>Farha</span> <br>From Frankfurt</h1>
+            </div>
+        </div>
+    </div>
+    <!--About-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="user image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Praesent venenatis odio
+                        ut
+                        neque feugiat, in consequat nisi cursus.
+                        Vestibulum aliquam odio nec velit tincidunt, at convallis augue interdum. Donec nec justo purus.
+                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span>Full Stack</span><br>Software Development (Python, Django, JavaScript, HTML,CSS)
+                            </li>
+                            <li>
+                                <span>Web Application</span><br>Front end and Backend Development
+                            </li>
+                            <li>
+                                <span>Database</span><br>SQL,PostgreSQL Database Programming
+                            </li>
+                            <li>
+                                <span>UX/UI</span><br>Design App interface
+                            </li>
+                            <li>
+                                <span>C/C++, Linux</span><br>Embedded Application
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <span>2022-2024</span><br>Embedded SW Developer at Murrelektronik GmbH
+                            </li>
+                            <li>
+                                <span>2021</span><br>Embedded SW Developer Extern at Philips Medizin Systeme GmbH
+                            </li>
+                            <li>
+                                <span>2018-2020</span><br>Embedded SW Developer at Bertrandt AG
+                            </li>
+                            <li>
+                                <span>2016-2018</span><br>Embedded SW Developer at F&S Elektronik Systeme GmbH
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span>2024</span><br>Diploma in Full Stack SW Development
+                            </li>
+                            <li>
+                                <span>2013-2017</span><br>MSc in Information and Automation Engineering, University of
+                                Bremen
+                            </li>
+                            <li>
+                                <span>2008-2011</span><br>BSc in Electrical, Electronics and Communication
+                                Engineering<br>
+                                Millitary Institute of Science & Technology, Bangladesh
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
+<!---services-->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <h2>Web Development</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Praesent venenatis odio ut neque feugiat, in consequat nisi cursus.
+                    Vestibulum aliquam odio nec velit tincidunt, at convallis augue interdum. Donec nec justo purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                 </p>
+                 <a href="'#">learn more</a>
+            </div>
+            <div>
+                <h2>Frontend and Backend Development</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Praesent venenatis odio ut neque feugiat, in consequat nisi cursus.
+                    Vestibulum aliquam odio nec velit tincidunt, at convallis augue interdum. Donec nec justo purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                 </p>
+                 <a href="'#">learn more</a>
+            </div>
+            <div>
+                <h2>UX/UI Design</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Praesent venenatis odio ut neque feugiat, in consequat nisi cursus.
+                    Vestibulum aliquam odio nec velit tincidunt, at convallis augue interdum. Donec nec justo purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                 </p>
+                 <a href="'#">learn more</a>
+            </div>
+        </div>
+    </div>
 </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
 </body>
+
 </html>
