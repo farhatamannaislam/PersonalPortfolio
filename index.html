@@ -19,13 +19,15 @@
         <div class="container">
             <nav>
                 <img src="images/logo.png" alt="logo image" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Full Stack SW Developer</p>
@@ -43,11 +45,13 @@
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Praesent venenatis odio
-                        ut
-                        neque feugiat, in consequat nisi cursus.
-                        Vestibulum aliquam odio nec velit tincidunt, at convallis augue interdum. Donec nec justo purus.
-                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                        Junior software developer with a diploma in Full Stack Software Development from the Code
+                        Institute.
+                        Excellent knowledge of HTML, CSS, JavaScript, Python, and React.js.
+                        I have approximately 6 years of experience in embedded software development.<br>I am a valuable
+                        team player with strong communication skills and a solution-oriented approach.
+                        I am excited to enter the technology industry and join an exciting development team where I can
+                        grow and contribute!
                     </p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
@@ -57,19 +61,39 @@
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
                             <li>
-                                <span>Full Stack</span><br>Software Development (Python, Django, JavaScript, HTML,CSS)
+                                <i class="fa-solid fa-code"></i>
+                                <span>Technology</span><br>HTML5,
+                                CSS3,
+                                JavaScript,
+                                Python,
+                                C/C++,
+                                Linux,
+                                Matlab/Simulink
                             </li>
                             <li>
-                                <span>Web Application</span><br>Front end and Backend Development
+                                <i class="fa-solid fa-database"></i>
+                                <span>Database</span><br>MongoDB,
+                                MySQL,
+                                PostgreSQL,
+                                SQL,
                             </li>
                             <li>
-                                <span>Database</span><br>SQL,PostgreSQL Database Programming
+                                <i class="fa-brands fa-react"></i>
+                                <span>Framework</span><br>Django,
+                                DjangoRest API,
+                                React,
+                                jQuery,
+                                Bootstrap,
+                                Tailwind CSS
                             </li>
                             <li>
-                                <span>UX/UI</span><br>Design App interface
-                            </li>
-                            <li>
-                                <span>C/C++, Linux</span><br>Embedded Application
+                                <i class="fa-brands fa-github"></i>
+                                <span>Version Control and Additional Skills</span><br>Git,
+                                Github,
+                                Heroku,
+                                Agile,
+                                UX Design,
+                                SVN
                             </li>
                         </ul>
                     </div>
@@ -119,34 +143,33 @@
                     <i class="fa-solid fa-laptop-code"></i>
                     <h2>Web Development</h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Praesent venenatis odio
-                        ut neque feugiat, in consequat nisi cursus.
-                        Vestibulum aliquam odio nec velit tincidunt, at convallis augue interdum. Donec nec justo purus.
-                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                        I specialize in creating high-quality, responsive websites that are optimized for performance
+                        and user experience.
+                        From static landing pages to complex web applications, I build solutions tailored to your
+                        business needs, using the latest
+                        technologies and best practices in the industry.
                     </p>
-                    <a href="'#">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-brands fa-python"></i>
                     <h2>Frontend and Backend Development</h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Praesent venenatis odio
-                        ut neque feugiat, in consequat nisi cursus.
-                        Vestibulum aliquam odio nec velit tincidunt, at convallis augue interdum. Donec nec justo purus.
-                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                        With expertise in both frontend and backend development, I build seamless, dynamic, and scalable
+                        web applications.
+                        Whether it's designing intuitive user interfaces or creating robust server-side logic, I ensure
+                        a smooth and efficient
+                        workflow that enhances user engagement and business productivity.
                     </p>
-                    <a href="'#">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-object-group"></i>
                     <h2>UX/UI Design</h2>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Praesent venenatis odio
-                        ut neque feugiat, in consequat nisi cursus.
-                        Vestibulum aliquam odio nec velit tincidunt, at convallis augue interdum. Donec nec justo purus.
-                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                        I focus on crafting visually appealing and user-friendly designs that improve the overall
+                        experience of your website or application.
+                        By combining user research, wireframing, and interactive prototypes, I create intuitive designs
+                        that enhance usability and drive conversions.
                     </p>
-                    <a href="'#">Learn more</a>
                 </div>
             </div>
         </div>
@@ -160,7 +183,7 @@
                     <img src="images/work-1.png" alt="first work">
                     <div class="layer">
                         <h3>Social Media App</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p>Social Media Platform for designers</p>
                         <a href="https://github.com/farhatamannaislam/designer-hub-frontend" target="_blank"><i
                                 class="fa-solid fa-square-up-right"></i></a>
                     </div>
@@ -169,7 +192,7 @@
                     <img src="images/work-2.png" alt="second work">
                     <div class="layer">
                         <h3>Blog App</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p>Travel blog for people to share their experience</p>
                         <a href="https://github.com/farhatamannaislam/TravelWithFun" target="_blank"><i
                                 class="fa-solid fa-square-up-right"></i></a>
                     </div>
@@ -178,7 +201,7 @@
                     <img src="images/work-3.png" alt="third work">
                     <div class="layer">
                         <h3>Dating App</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p>Dating app to create meaningful connections</p>
                         <a href="https://github.com/violaberg/dating-app" target="_blank"><i
                                 class="fa-solid fa-square-up-right"></i></a>
                     </div>
@@ -186,8 +209,8 @@
                 <div class="work">
                     <img src="images/work-4.png" alt="fourth work">
                     <div class="layer">
-                        <h3>Avent Calendar App</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h3>Advent Calendar</h3>
+                        <p>Advent calendar for festive December</p>
                         <a href="https://github.com/Morgana-S/magic-december" target="_blank"><i
                                 class="fa-solid fa-square-up-right"></i></a>
                     </div>
@@ -196,13 +219,13 @@
                     <img src="images/work-5.png" alt="fifth work">
                     <div class="layer">
                         <h3>Communication App</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <p>Communication app for disabled people to communicate with their caregivers</p>
                         <a href="https://github.com/aslinedvinsson/Axisofaccesshack" target="_blank"><i
                                 class="fa-solid fa-square-up-right"></i></a>
                     </div>
                 </div>
             </div>
-            <a href="#" class="btn">See More</a>
+            <a href="https://github.com/aslinedvinsson/Axisofaccesshack" target="_blank" class="btn">See More</a>
         </div>
     </div>
     <!----------contact--------->
@@ -219,23 +242,24 @@
                         <a href="https://www.xing.com/profile/FarhaTamanna_Islam/web_profiles?expandNeffi=true"
                             target="_blank"><i class="fa-brands fa-xing"></i></a>
                     </div>
-                    <a href="images/CV.pdf"download class="btn">Download CV</a>
+                    <a href="images/CV.pdf" download class="btn">Download CV</a>
                 </div>
                 <div class="contact-right">
-                    <form>
+                    <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                         <button type="submit" class="btn btn2">Submit</button>
                     </form>
+                    <span id="msg"></span>
                 </div>
             </div>
         </div>
     </div>
-<!---------------copyright--------------->
-<div class="copyright">
-    <p>Copyright © Farha Tamanna Islam</p>
-</div>
+    <!---------------copyright--------------->
+    <div class="copyright">
+        <p>Copyright © Farha Tamanna Islam</p>
+    </div>
     <script>
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
@@ -249,6 +273,33 @@
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
         }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzR34dtz4xM2TPI-jgHpjxFC81kZbMNcs5yOznqQo8CfgwhzJFPMpdSd3glvRSVxQ_6Cg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent Successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
     </script>
 </body>
 
