@@ -18,6 +18,7 @@ body {
     background-image: url(images/background.png);
     background-size: cover;
     background-position: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .container {
@@ -88,6 +89,7 @@ nav ul li a:hover::after {
 #about {
     padding: 80px 0;
     color: #85c1e9;
+    background: linear-gradient(to bottom, #0A0A23, #000);
 }
 
 .row {
@@ -111,6 +113,11 @@ nav ul li a:hover::after {
     line-height: 1.6; /* Adjusts spacing between lines */
     margin-bottom: 20px; /* Adds space below the text */
     letter-spacing: 0.5px; /* Improves readability */
+}
+
+.about-col-2 a {
+    color: #00AEEF; /* Lighter blue for contrast */
+    text-decoration: underline; /* Improves readability */
 }
 
 .about-col-2 p span {
