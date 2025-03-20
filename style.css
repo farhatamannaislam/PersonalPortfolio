@@ -404,7 +404,8 @@ form .btn2 {
     width: 100%;
     text-align: center;
     padding: 25px 0;
-    background-color: #2874a6;
+    background-color: #004b80; /* Slightly darker blue */
+    color: white; /* Softer white for readability */
     font-weight: 300;
     margin-top: 20px;
 }
