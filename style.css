@@ -103,12 +103,20 @@ nav ul li a:hover::after {
 .about-col-1 img {
     width: 100%;
     border-radius: 15px;
+    box-shadow: 0px 0px 5px #fff;
 }
 
 .about-col-2 {
     flex-basis: 60%;
+    line-height: 1.6; /* Adjusts spacing between lines */
+    margin-bottom: 20px; /* Adds space below the text */
+    letter-spacing: 0.5px; /* Improves readability */
 }
 
+.about-col-2 p span {
+    font-weight: bold;
+    color: white; /* Highlight key points in blue */
+}
 .sub-title {
     font-size: 60px;
     font-weight: 600;
