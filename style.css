@@ -333,10 +333,12 @@ nav ul li a:hover::after {
 /*--------contact------*/
 .contact-left {
     flex-basis: 35%;
+    margin-top: 50px;
 }
 
 .contact-right {
     flex-basis: 60%;
+    margin-top: 50px;
 }
 
 .contact-left p {
