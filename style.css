@@ -113,6 +113,8 @@ nav ul li a:hover::after {
     line-height: 1.6; /* Adjusts spacing between lines */
     margin-bottom: 20px; /* Adds space below the text */
     letter-spacing: 0.5px; /* Improves readability */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 18px;
 }
 
 .about-col-2 a {
