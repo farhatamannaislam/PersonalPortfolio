@@ -12,6 +12,20 @@ body {
     color: white;
 }
 
+/* Default: Sections are hidden initially */
+.fade-section {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  
+  /* When a section comes into view, apply this */
+  .fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+
 #header {
     width: 100%;
     height: 80vh;

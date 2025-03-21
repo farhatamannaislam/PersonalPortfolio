@@ -36,7 +36,7 @@
         </div>
     </div>
     <!--About-->
-    <div id="about">
+    <div id="about" class="fade-section">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
@@ -45,10 +45,14 @@
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
                     <p>
-                        I am a <span>Junior Software Developer</span> with a diploma in Full Stack Software Development from Code
-                        Institute and a <span>strong foundation in modern web technologies</span>, <span>including HTML, CSS, JavaScript,
-                        Python, Django and React.js</span>. <span>With approximately six years of experience in embedded software
-                        development</span>, I bring a unique perspective that blends low-level programming expertise with
+                        I am a <span>Junior Software Developer</span> with a diploma in Full Stack Software Development
+                        from Code
+                        Institute and a <span>strong foundation in modern web technologies</span>, <span>including HTML,
+                            CSS, JavaScript,
+                            Python, Django and React.js</span>. <span>With approximately six years of experience in
+                            embedded software
+                            development</span>, I bring a unique perspective that blends low-level programming expertise
+                        with
                         high-level application development.
 
                         As a collaborative team player with strong communication skills, I thrive in problem-solving
@@ -107,7 +111,8 @@
                         <ul>
                             <li>
                                 <span>2024-Present</span><br>Diploma & Alumni at Code Institute<br>
-                                Fullstack programming (Python, Django, JavaScript, React,Database) for web application (Frontend & Backend), Version Control,
+                                Fullstack programming (Python, Django, JavaScript, React,Database) for web application
+                                (Frontend & Backend), Version Control,
                                 Automated SW Test, Manual Test, Documentation
                             </li>
                             <li>
@@ -150,7 +155,7 @@
     </div>
 
     <!---services-->
-    <div id="services">
+    <div id="services" class="fade-section">
         <div class="container">
             <h1 class="sub-title">My Services</h1>
             <div class="services-list">
@@ -169,10 +174,13 @@
                     <i class="fa-brands fa-python"></i>
                     <h2>Frontend and Backend Development</h2>
                     <p>
-                        With expertise in both frontend and backend development, I build seamless, dynamic, and scalable web applications.
-                        I incorporate automated testing throughout the development process to ensure code quality, reliability, and easier maintenance. 
-                        Whether it's designing intuitive user interfaces or creating robust server-side logic, 
-                        I ensure a smooth and efficient workflow that enhances user engagement and business productivity.
+                        With expertise in both frontend and backend development, I build seamless, dynamic, and scalable
+                        web applications.
+                        I incorporate automated testing throughout the development process to ensure code quality,
+                        reliability, and easier maintenance.
+                        Whether it's designing intuitive user interfaces or creating robust server-side logic,
+                        I ensure a smooth and efficient workflow that enhances user engagement and business
+                        productivity.
                     </p>
                 </div>
                 <div>
@@ -189,7 +197,7 @@
         </div>
     </div>
     <!---Portfolio-->
-    <div id="portfolio">
+    <div id="portfolio" class="fade-section">
         <div class="container">
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
@@ -243,7 +251,7 @@
         </div>
     </div>
     <!----------contact--------->
-    <div id="contact">
+    <div id="contact" class="fade-section">
         <div class="container">
             <div class="row">
                 <div class="contact-left">
@@ -315,6 +323,32 @@
                 .catch(error => console.error('Error!', error.message))
         })
     </script>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const sections = document.querySelectorAll(".fade-section");
+  
+      function isInView(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+          rect.top < window.innerHeight - 100 &&
+          rect.bottom > 0
+        );
+      }
+  
+      function handleScroll() {
+        sections.forEach((section) => {
+          if (isInView(section)) {
+            section.classList.add("fade-in");
+          } else {
+            section.classList.remove("fade-in"); // This makes the animation happen again when scrolling up
+          }
+        });
+      }
+  
+      document.addEventListener("scroll", handleScroll);
+      handleScroll(); // Trigger on page load in case some sections are already visible
+    });
+  </script>
+  
 </body>
-
 </html>
